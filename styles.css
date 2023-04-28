@@ -1,0 +1,141 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(5, 5, 5);
+  margin-left: 1rem;
+}
+
+/**Navbar  */
+.index {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav span {
+  color: #c778dd;
+}
+a,
+p {
+  color: #abb2bf;
+}
+.logo {
+  color: white;
+}
+.lien {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+/**block 1 */
+.titre span {
+  color: #c778dd;
+}
+
+.ligne {
+  width: 100%;
+  height: 1px;
+  background-color: #c778dd;
+}
+h2 {
+  color: white;
+}
+
+.titre {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tuile {
+  border: solid 1px #abb2bf;
+  width: 10rem;
+  height: 15rem;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  border: solid 1px #abb2bf;
+}
+.tuiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.tuile .p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 10px;
+}
+.p {
+  border-bottom: solid 1px #abb2bf;
+  margin-bottom: 2rem;
+  color: #c778dd;
+}
+
+.presentation {
+  text-align: center;
+  text-shadow: white;
+  font-size: large;
+}
+
+.btn-bloc2 {
+  text-align: end;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+i {
+  color: #c778dd;
+}
+.skill {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+  color: aliceblue;
+}
+
+.tuile:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: -0.2em 0 0.4em aliceblue;
+}
+.comp-1 {
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: url(./images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg) no-repeat
+      center/cover fixed;
+    transition: 10s;
+  }
+  .lien {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: auto;
+  }
+}
